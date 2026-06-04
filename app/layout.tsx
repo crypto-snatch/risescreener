@@ -3,6 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import TxSearch from "@/components/TxSearch";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://risescreener.com"),
@@ -36,6 +37,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body data-dir="terminal">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('rs-theme')==='light')document.body.dataset.theme='light';}catch(e){}`,
+          }}
+        />
         <div className="bg-atmos" />
         <div className="shell">
           <header className="sticky-head">
@@ -50,7 +56,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </span>
                 </Link>
                 <Nav />
-                <div style={{ flex: 1, minWidth: 180, maxWidth: 360, marginLeft: "auto" }}>
+                <div style={{ marginLeft: "auto", flexShrink: 0 }}>
+                  <ThemeToggle />
+                </div>
+                <div style={{ flex: 1, minWidth: 180, maxWidth: 360 }}>
                   <TxSearch />
                 </div>
                 <a

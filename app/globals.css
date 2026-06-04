@@ -143,6 +143,47 @@ body[data-dir="terminal"] .bg-atmos {
 body[data-dir="terminal"] .glass { box-shadow: none; }
 body[data-dir="terminal"] .glow-edge::before { opacity: 0.35; }
 
+/* ============================================================
+   LIGHT THEME — white canvas, RISEx green kept as the accent.
+   Toggle sets data-theme="light" on <body>; dark stays default.
+   Same specificity as the terminal block but declared later → wins.
+   ============================================================ */
+body[data-theme="light"] {
+  --bg: #eef3f1;
+  --ink: #0a1812;            /* near-black, slight green cast — high contrast */
+  --muted: #46574f;          /* secondary text, clearly readable on white */
+  --muted-2: #66786f;        /* tertiary labels */
+  --glass: #ffffff;          /* panels are solid white cards */
+  --glass-2: #ffffff;
+  --hair: rgba(8, 44, 37, 0.14);
+  --hair-soft: rgba(8, 44, 37, 0.08);
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 16px 38px -24px rgba(8, 44, 37, 0.22);
+  --accent: #11c089;         /* vivid RISEx green for chips / borders / fills */
+  --accent-soft: color-mix(in oklab, var(--accent) 15%, transparent);
+  --accent-line: color-mix(in oklab, var(--accent) 46%, transparent);
+  --accent-ink: #06805c;     /* deeper green for values / links (legible on white) */
+  --brand-green: #11c089;
+  --long: #08996a;
+  --short: #db463d;
+}
+body[data-theme="light"] .bg-atmos {
+  background:
+    linear-gradient(rgba(8, 44, 37, 0.035) 1px, transparent 1px) 0 0 / 100% 30px,
+    linear-gradient(90deg, rgba(8, 44, 37, 0.035) 1px, transparent 1px) 0 0 / 30px 100%,
+    radial-gradient(70% 50% at 50% 0%, color-mix(in oklab, var(--accent) 13%, transparent), transparent 72%),
+    #eef3f1;
+}
+body[data-theme="light"] .glass { box-shadow: var(--shadow); }
+body[data-theme="light"] .glow-edge::before { opacity: 0; }
+body[data-theme="light"] .pill { color: #3d504a; }
+body[data-theme="light"] .pill:hover { color: var(--ink); background: rgba(8, 44, 37, 0.06); }
+body[data-theme="light"] .field { background: #ffffff; }
+body[data-theme="light"] ::-webkit-scrollbar-thumb { background: rgba(8, 44, 37, 0.18); background-clip: padding-box; }
+body[data-theme="light"] ::-webkit-scrollbar-thumb:hover { background: rgba(8, 44, 37, 0.30); background-clip: padding-box; }
+/* chart surfaces: dark-theme used faint white strokes — make them faint dark on light */
+body[data-theme="light"] .recharts-cartesian-grid line { stroke: rgba(8, 44, 37, 0.10) !important; }
+body[data-theme="light"] .recharts-cartesian-axis-tick text { fill: #5a6c64 !important; }
+
 /* ---------- nav pills ---------- */
 .pill {
   display: inline-flex; align-items: center; gap: 7px;

@@ -35,8 +35,6 @@ export default async function Overview() {
     <div className="screen" data-page="overview" style={{ display: "flex", flexDirection: "column", gap: 18 }}>
       <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800 }}>Overview</h1>
 
-      <ShredPulse />
-
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px,1fr))", gap: 10 }}>
         <Stat big label="TVL" value={usd(dune?.totals.tvl ?? p.tvl)} tone="accent" />
         <Stat big label="Total open interest" value={usd(dune?.totals.oi ?? p.totalOiUsd)} />
@@ -61,12 +59,14 @@ export default async function Overview() {
         <Panel pad="14px 16px">
           <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>TVL</div>
           {tvlPoints.length > 1 ? (
-            <AreaTrend data={tvlPoints} xKey="t" yKey="tvl" xPreset="date" height={300} />
+            <AreaTrend data={tvlPoints} xKey="t" yKey="tvl" xPreset="date" yPreset="usd" valueName="TVL" height={300} />
           ) : (
             <div style={{ height: 300, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--muted)", fontSize: 12 }}>no data</div>
           )}
         </Panel>
       </div>
+
+      <ShredPulse />
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px,1fr))", gap: 16 }}>
         <TopTable title="Top OI" rows={topOI} render={(r) => usd(r.oiUsd)} />

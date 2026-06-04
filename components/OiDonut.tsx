@@ -24,7 +24,7 @@ export default function OiDonut({ data, height = 340 }: { data: D[]; height?: nu
   };
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 112px", gap: 8, alignItems: "center" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 152px", gap: 10, alignItems: "center" }}>
       <div style={{ position: "relative" }}>
         <ResponsiveContainer width="100%" height={height}>
           <PieChart>
@@ -56,7 +56,7 @@ export default function OiDonut({ data, height = 340 }: { data: D[]; height?: nu
       </div>
 
       {/* interactive legend */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 1, maxHeight: height, overflowY: "auto" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
         {data.map((d, i) => (
           <button
             key={d.name}
@@ -68,7 +68,7 @@ export default function OiDonut({ data, height = 340 }: { data: D[]; height?: nu
               background: active === i ? "rgba(255,255,255,0.07)" : "transparent",
               opacity: active == null || active === i ? 1 : 0.45,
               transition: "opacity .15s ease, background .15s ease",
-              cursor: "default", textAlign: "left", width: "100%",
+              cursor: "default", textAlign: "left", width: "100%", whiteSpace: "nowrap",
             }}
           >
             <span style={{ width: 8, height: 8, borderRadius: 2, background: d.color, flexShrink: 0 }} />

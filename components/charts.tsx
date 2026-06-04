@@ -49,6 +49,8 @@ export function AreaTrend({
   color = ACC,
   height = 240,
   xPreset = "date",
+  yPreset = "raw",
+  valueName = "value",
 }: {
   data: Record<string, number>[];
   xKey?: string;
@@ -56,12 +58,15 @@ export function AreaTrend({
   color?: string;
   height?: number;
   xPreset?: "date" | "datetime";
+  yPreset?: "raw" | "usd";
+  valueName?: string;
 }) {
   // formatting stays client-side (functions can't cross the server→client boundary)
   const xFmt = (t: number) =>
     xPreset === "datetime"
       ? new Date(t).toLocaleString("en-GB", { day: "2-digit", month: "short", hour: "2-digit", timeZone: "UTC" })
       : new Date(t).toLocaleDateString("en-GB", { day: "2-digit", month: "short", timeZone: "UTC" });
+  const yFmt = (v: number) => (yPreset === "usd" ? usd(Number(v)) : String(v));
   return (
     <ResponsiveContainer width="100%" height={height}>
       <AreaChart data={data} margin={{ top: 6, right: 8, left: 8, bottom: 0 }}>
@@ -72,8 +77,8 @@ export function AreaTrend({
           </linearGradient>
         </defs>
         <XAxis dataKey={xKey} tick={{ fill: "#506560", fontSize: 10 }} tickFormatter={xFmt} stroke={GRID} minTickGap={40} />
-        <YAxis tick={{ fill: "#506560", fontSize: 10 }} stroke={GRID} width={48} />
-        <Tooltip {...tip} />
+        <YAxis tick={{ fill: "#506560", fontSize: 10 }} stroke={GRID} width={yPreset === "usd" ? 56 : 48} tickFormatter={yFmt} />
+        <Tooltip {...tip} labelFormatter={(t) => xFmt(Number(t))} formatter={(v: number) => [yFmt(Number(v)), valueName]} />
         <Area type="monotone" dataKey={yKey} stroke={color} strokeWidth={1.5} fill={`url(#g-${yKey})`} isAnimationActive={false} />
       </AreaChart>
     </ResponsiveContainer>

@@ -158,13 +158,13 @@ body[data-theme="light"] {
   --hair: rgba(8, 44, 37, 0.14);
   --hair-soft: rgba(8, 44, 37, 0.08);
   --shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 16px 38px -24px rgba(8, 44, 37, 0.22);
-  --accent: #11c089;         /* vivid RISEx green for chips / borders / fills */
-  --accent-soft: color-mix(in oklab, var(--accent) 15%, transparent);
-  --accent-line: color-mix(in oklab, var(--accent) 46%, transparent);
-  --accent-ink: #06805c;     /* deeper green for values / links (legible on white) */
-  --brand-green: #11c089;
-  --long: #08996a;
-  --short: #db463d;
+  --accent: #228b22;         /* forest green — chips / borders / fills */
+  --accent-soft: color-mix(in oklab, var(--accent) 16%, transparent);
+  --accent-line: color-mix(in oklab, var(--accent) 48%, transparent);
+  --accent-ink: color-mix(in oklab, var(--accent) 82%, black 18%); /* deeper forest for values / links */
+  --brand-green: #228b22;
+  --long: #228b22;
+  --short: #c63a31;
 }
 body[data-theme="light"] .bg-atmos {
   background:

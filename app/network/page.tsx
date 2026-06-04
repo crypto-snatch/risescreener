@@ -4,7 +4,7 @@ import { Panel, Stat, SectionLabel } from "@/components/ui";
 import RiseFlow from "@/components/RiseFlow";
 
 export const revalidate = 15;
-export const metadata = { title: "Network — RiseScan Analytics" };
+export const metadata = { title: "Network — RiseScreener" };
 
 const FACTS: [string, string, string][] = [
   ["Type", "Ethereum L2", "based rollup, settles to Ethereum"],

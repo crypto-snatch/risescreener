@@ -5,7 +5,7 @@ import { EXPLORER_UI } from "@/lib/constants";
 import { Panel, Stat } from "@/components/ui";
 
 export const revalidate = 30;
-export const metadata = { title: "Flows — RiseScan Analytics" };
+export const metadata = { title: "Flows — RiseScreener" };
 
 export default async function FlowsPage() {
   const [f, tvl] = await Promise.all([getFlows(), getTvl()]);

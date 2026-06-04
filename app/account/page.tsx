@@ -1,6 +1,6 @@
 import AccountInput from "@/components/AccountInput";
 
-export const metadata = { title: "Account Explorer — RiseScan" };
+export const metadata = { title: "Account — RiseScreener" };
 
 export default function AccountPage() {
   return (

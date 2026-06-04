@@ -5,9 +5,23 @@ import Nav from "@/components/Nav";
 import TxSearch from "@/components/TxSearch";
 
 export const metadata: Metadata = {
-  title: "RiseScreener — RISEx analytics & risk screener",
+  metadataBase: new URL("https://risescreener.com"),
+  title: "RiseScreener — RISE Chain & RISEx analytics",
   description:
-    "A comprehensive analytics & risk screener for RISE Chain and the RISEx perps DEX — markets, funding, open interest, liquidations, traders and protocol flows.",
+    "Analytics & risk screener for RISE Chain and the RISEx perps DEX — live markets, open interest, funding, fees, liquidations, traders and protocol flows.",
+  openGraph: {
+    title: "RiseScreener — RISE Chain & RISEx analytics",
+    description:
+      "Analytics & risk screener for RISE Chain and the RISEx perps DEX — markets, open interest, funding, fees, liquidations, traders and protocol flows.",
+    url: "https://risescreener.com",
+    siteName: "RiseScreener",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RiseScreener — RISE Chain & RISEx analytics",
+    description: "Analytics & risk screener for RISE Chain and the RISEx perps DEX.",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

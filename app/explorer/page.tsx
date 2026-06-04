@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ChainStream from "@/components/ChainStream";
 
-export const metadata = { title: "Explorer — RiseScan Analytics" };
+export const metadata = { title: "Explorer — RiseScreener" };
 
 export default function ExplorerPage() {
   return (

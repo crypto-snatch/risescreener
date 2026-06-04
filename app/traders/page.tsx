@@ -5,7 +5,7 @@ import { Panel, Stat, SectionLabel } from "@/components/ui";
 import TopWallets, { type TopRow } from "@/components/TopWallets";
 
 export const revalidate = 30;
-export const metadata = { title: "Traders — RiseScan Analytics" };
+export const metadata = { title: "Traders — RiseScreener" };
 
 export default async function TradersPage() {
   const [snap, wallets] = await Promise.all([getSnapshot(), getWalletStats()]);

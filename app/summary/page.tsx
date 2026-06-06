@@ -42,36 +42,38 @@ export default async function SummaryPage() {
 
   const [p, dune, lb, ts] = await Promise.all([getProtocol(), getDune(), getSnapshot(), getTimeseries()]);
 
-  const vol24h = p.totalVolume24h;
   const oiNow = dune?.totals.oi ?? p.totalOiUsd;
   const tvl = dune?.totals.tvl ?? p.tvl;
   const cumVol = dune?.totals.cumVolume ?? 0;
   const cumFee = (dune?.fees.total ?? 0) + (dune?.liqTotals.fees ?? 0);
+  const lastNonZero = (arr: { [k: string]: number }[]) => { for (let i = arr.length - 1; i >= 0; i--) if (sumCoins(arr[i])) return i; return -1; };
 
+  // Volume — last complete UTC day from Dune + day-over-day delta
+  const volDays = dune?.volume ?? [];
+  const vi = lastNonZero(volDays);
+  const vol24h = vi >= 0 ? sumCoins(volDays[vi]) : p.totalVolume24h;
+  const volChg = vi > 0 ? sumCoins(volDays[vi]) - sumCoins(volDays[vi - 1]) : 0;
+
+  // Fees (trade+liq) — last complete UTC day + day-over-day delta
   const feeDays = dune?.feesByMarket ?? [];
   const liqDays = dune?.liqFeesByMarket ?? [];
   const dayFee = (i: number) => sumCoins(feeDays[i]) + sumCoins(liqDays[i]);
-  let li = -1;
-  for (let i = feeDays.length - 1; i >= 0; i--) if (sumCoins(feeDays[i]) > 0) { li = i; break; }
+  const li = lastNonZero(feeDays);
   const fee24h = li >= 0 ? dayFee(li) : 0;
   const feeChg = li > 0 ? dayFee(li) - dayFee(li - 1) : 0;
 
-  const tvlDays = dune?.tvl ?? [];
-  let flow24h = 0;
-  for (let i = tvlDays.length - 1; i >= 0; i--) {
-    const x = tvlDays[i];
-    if ((x.deposits || 0) || (x.withdrawals || 0) || (x.net || 0)) { flow24h = x.net || 0; break; }
-  }
+  // TVL — current + day-over-day change of the TVL series
+  const tvlSeries = dune?.tvl ?? [];
+  const tvlChg = tvlSeries.length >= 2 ? tvlSeries[tvlSeries.length - 1].tvl - tvlSeries[tvlSeries.length - 2].tvl : 0;
 
+  // OI — change vs ~24h ago from our timeseries (no Dune daily OI history)
   let base: (typeof ts)[number] | null = null;
   if (ts.length) {
     const target = Date.now() - 24 * 3600 * 1000;
     base = ts[0];
     for (const x of ts) if (Math.abs(x.t - target) < Math.abs(base.t - target)) base = x;
   }
-  const volChg = base && sumCoins(base.vol) ? vol24h - sumCoins(base.vol) : 0;
   const oiChg = base && sumCoins(base.oi) ? oiNow - sumCoins(base.oi) : 0;
-  const tvlChg = base?.tvl ? tvl - base.tvl : 0;
 
   const date = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" });
   const d = (n: number) => (n ? usd(n, { sign: true }) : undefined);
@@ -90,7 +92,6 @@ export default async function SummaryPage() {
     { label: "Open Interest", value: usd(oiNow), delta: d(oiChg) },
     { label: "Fees (trade + liq)", value: usd(fee24h), delta: d(feeChg) },
     { label: "TVL", value: usd(tvl), delta: d(tvlChg) },
-    { label: "Net Flow", value: usd(flow24h, { sign: true }), tone: flow24h < 0 ? "neg" : "pos" },
   ];
   const kpisTotal: ShareProps["kpisTotal"] = [
     { label: "Volume", value: usd(cumVol) },
@@ -105,8 +106,7 @@ export default async function SummaryPage() {
     `• Volume: ${usd(vol24h)}${dl(volChg)}`,
     `• Open Interest: ${usd(oiNow)}${dl(oiChg)}`,
     `• Fees (trade+liq): ${usd(fee24h)}${dl(feeChg)}`,
-    `• TVL: ${usd(tvl)}${dl(tvlChg)}`,
-    `• Net Flow: ${usd(flow24h, { sign: true })}`, ``,
+    `• TVL: ${usd(tvl)}${dl(tvlChg)}`, ``,
     `ALL-TIME`,
     `• Volume: ${usd(cumVol)}`,
     `• Fees (trade+liq): ${usd(cumFee)}`, ``,

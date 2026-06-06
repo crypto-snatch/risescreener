@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <TxSearch />
                 </div>
                 <a
-                  href="https://www.rise.trade/invite/snatch"
+                  href="https://www.rise.trade/invite/risescreener"
                   target="_blank"
                   rel="noreferrer"
                   className="chip tag-accent"

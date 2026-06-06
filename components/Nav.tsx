@@ -11,6 +11,7 @@ const tabs: [string, string][] = [
   ["/flows", "Flows"],
   ["/network", "Network"],
   ["/explorer", "Explorer"],
+  ["/summary", "Summary"],
 ];
 
 export default function Nav() {

@@ -94,7 +94,6 @@ export default async function SummaryPage() {
   ];
   const kpisTotal: ShareProps["kpisTotal"] = [
     { label: "Volume", value: usd(cumVol) },
-    { label: "Open Interest", value: usd(oiNow) },
     { label: "Fees (trade + liq)", value: usd(cumFee) },
   ];
 
@@ -110,7 +109,6 @@ export default async function SummaryPage() {
     `• Net Flow: ${usd(flow24h, { sign: true })}`, ``,
     `ALL-TIME`,
     `• Volume: ${usd(cumVol)}`,
-    `• Open Interest: ${usd(oiNow)}`,
     `• Fees (trade+liq): ${usd(cumFee)}`, ``,
     `🏆 Top traders`,
     `Volume:  ${line(tops[0].rows)}`,

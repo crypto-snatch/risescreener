@@ -100,7 +100,6 @@ async function main() {
   ];
   const kpisTotal = [
     { label: "Volume", value: usd(cumVol) },
-    { label: "Open Interest", value: usd(oiNow) },
     { label: "Fees (trade + liq)", value: usd(cumFee) },
   ];
   const dl = (n) => (n ? ` (${usd(n, { sign: true })} 24h)` : "");
@@ -115,7 +114,6 @@ async function main() {
     `• Net Flow: ${usd(flow24h, { sign: true })}`, ``,
     `ALL-TIME`,
     `• Volume: ${usd(cumVol)}`,
-    `• Open Interest: ${usd(oiNow)}`,
     `• Fees (trade+liq): ${usd(cumFee)}`, ``,
     `🏆 Top traders`,
     `Volume:  ${line(tops[0].rows)}`,

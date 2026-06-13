@@ -31,6 +31,13 @@ export async function getDune(): Promise<DuneData | null> {
       raw = await readFile(join(process.cwd(), "data", "dune.json"), "utf8");
     }
     const data = JSON.parse(raw) as DuneData;
+    // Drop the in-progress current UTC day — its daily bucket is partial (a tiny
+    // bar at the chart's right edge). Charts/series should show complete days only.
+    const startTodayUTC = Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), new Date().getUTCDate());
+    const dropToday = (a?: CoinDay[]) => (a ? a.filter((x) => x.t < startTodayUTC) : a);
+    if (data.volume) data.volume = dropToday(data.volume)!;
+    if (data.feesByMarket) data.feesByMarket = dropToday(data.feesByMarket)!;
+    if (data.liqFeesByMarket) data.liqFeesByMarket = dropToday(data.liqFeesByMarket)!;
     cache = { at: Date.now(), data };
     return data;
   } catch {

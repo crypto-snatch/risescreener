@@ -26,7 +26,10 @@ const usd = (n, opts = {}) => {
 const shortAddr = (a) => (!a || a.length < 12 ? a : `${a.slice(0, 6)}…${a.slice(-4)}`);
 const COINS = ["BTC", "ETH", "SOL", "HYPE", "Others"];
 const sumCoins = (o) => (o ? COINS.reduce((s, c) => s + (o[c] || 0), 0) : 0);
-const lastNonZero = (arr) => { for (let i = arr.length - 1; i >= 0; i--) if (sumCoins(arr[i]) > 0) return i; return -1; };
+// last COMPLETE UTC day: skip the in-progress current day (its bucket is partial)
+const _now = new Date();
+const START_TODAY_UTC = Date.UTC(_now.getUTCFullYear(), _now.getUTCMonth(), _now.getUTCDate());
+const lastComplete = (arr) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i].t < START_TODAY_UTC && sumCoins(arr[i]) > 0) return i; return -1; };
 const readJson = async (p) => { try { return JSON.parse(await readFile(p, "utf8")); } catch { return null; } };
 
 async function main() {
@@ -41,7 +44,7 @@ async function main() {
 
   // 24h VOLUME — last complete UTC day from Dune + day-over-day delta
   const volDays = dune?.volume || [];
-  const vi = lastNonZero(volDays);
+  const vi = lastComplete(volDays);
   const vol24h = vi >= 0 ? sumCoins(volDays[vi]) : 0;
   const volChg = vi > 0 ? sumCoins(volDays[vi]) - sumCoins(volDays[vi - 1]) : 0;
 
@@ -49,7 +52,7 @@ async function main() {
   const fd = dune?.feesByMarket || [];
   const ld = dune?.liqFeesByMarket || [];
   const dayFee = (i) => sumCoins(fd[i]) + sumCoins(ld[i]);
-  const li = lastNonZero(fd);
+  const li = lastComplete(fd);
   const fee24h = li >= 0 ? dayFee(li) : 0;
   const feeChg = li > 0 ? dayFee(li) - dayFee(li - 1) : 0;
 

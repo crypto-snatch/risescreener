@@ -46,11 +46,14 @@ export default async function SummaryPage() {
   const tvl = dune?.totals.tvl ?? p.tvl;
   const cumVol = dune?.totals.cumVolume ?? 0;
   const cumFee = (dune?.fees.total ?? 0) + (dune?.liqTotals.fees ?? 0);
-  const lastNonZero = (arr: { [k: string]: number }[]) => { for (let i = arr.length - 1; i >= 0; i--) if (sumCoins(arr[i])) return i; return -1; };
+  // last COMPLETE UTC day: skip the in-progress current day (its bucket is partial)
+  const now = new Date();
+  const startTodayUTC = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const lastComplete = (arr: { t: number }[]) => { for (let i = arr.length - 1; i >= 0; i--) if (arr[i].t < startTodayUTC && sumCoins(arr[i] as Record<string, number>)) return i; return -1; };
 
   // Volume — last complete UTC day from Dune + day-over-day delta
   const volDays = dune?.volume ?? [];
-  const vi = lastNonZero(volDays);
+  const vi = lastComplete(volDays);
   const vol24h = vi >= 0 ? sumCoins(volDays[vi]) : p.totalVolume24h;
   const volChg = vi > 0 ? sumCoins(volDays[vi]) - sumCoins(volDays[vi - 1]) : 0;
 
@@ -58,7 +61,7 @@ export default async function SummaryPage() {
   const feeDays = dune?.feesByMarket ?? [];
   const liqDays = dune?.liqFeesByMarket ?? [];
   const dayFee = (i: number) => sumCoins(feeDays[i]) + sumCoins(liqDays[i]);
-  const li = lastNonZero(feeDays);
+  const li = lastComplete(feeDays);
   const fee24h = li >= 0 ? dayFee(li) : 0;
   const feeChg = li > 0 ? dayFee(li) - dayFee(li - 1) : 0;
 

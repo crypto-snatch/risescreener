@@ -1,638 +1,633 @@
 {
-  "generatedAt": "2026-07-02T08:05:18.422Z",
-  "totalAccounts": 9381,
-  "accountsWithPositions": 1578,
+  "generatedAt": "2026-07-02T10:49:38.757Z",
+  "totalAccounts": 9402,
+  "accountsWithPositions": 1813,
   "byOI": [
     {
+      "account": "0x938a104179a2d23dec249a968ecd5b4f8b857cac",
+      "oi": 760913.528065,
+      "uPnl": 1576.8767837461562,
+      "volume": 59913.30689549999,
+      "positionCount": 13,
+      "top": {
+        "symbol": "LIT",
+        "side": "long",
+        "lev": 3,
+        "notional": 169039.79200500002
+      }
+    },
+    {
+      "account": "0xabbc45d1726e3231e6fbad61eb72aef71b035787",
+      "oi": 508927.09070284996,
+      "uPnl": -8216.605683546071,
+      "volume": 537700.2068545998,
+      "positionCount": 6,
+      "top": {
+        "symbol": "BTC",
+        "side": "short",
+        "lev": 25,
+        "notional": 258316.29727784995
+      }
+    },
+    {
+      "account": "0x7c6bf9003ae3ba366883f63a28c4f3fd6a5958a0",
+      "oi": 486099.083444,
+      "uPnl": -30891.415323000023,
+      "volume": 353641.3893709999,
+      "positionCount": 2,
+      "top": {
+        "symbol": "LIT",
+        "side": "short",
+        "lev": 5,
+        "notional": 253297.01463500003
+      }
+    },
+    {
       "account": "0x36dc0d99dcaee443cebaa5fb8c11877d157c26df",
-      "oi": 394284.41103415005,
-      "uPnl": -2495.5530602803915,
-      "volume": 72219.63819230004,
+      "oi": 372353.96138625,
+      "uPnl": 348.49884247889395,
+      "volume": 54475.218807799996,
       "positionCount": 13,
       "top": {
         "symbol": "ZEC",
         "side": "short",
         "lev": 3,
-        "notional": 95255.000295
+        "notional": 94738.995855
       }
     },
     {
       "account": "0x679fb6c74b531e3f3136decbe9238cec6029f59a",
-      "oi": 336384.075775,
-      "uPnl": -17841.007041140037,
+      "oi": 342053.92059999995,
+      "uPnl": -18784.051866140027,
       "volume": 180659.00924680024,
       "positionCount": 2,
       "top": {
         "symbol": "HYPE",
         "side": "short",
         "lev": 20,
-        "notional": 216229.17577499998
+        "notional": 219535.62059999997
       }
     },
     {
       "account": "0xaebcf9c21bb4c26075edbd6bc205ec0a05ff1d3d",
-      "oi": 164826.92332499998,
-      "uPnl": -1833.8895750000015,
-      "volume": 166660.8129,
+      "oi": 163321.454575,
+      "uPnl": 1569.639239305331,
+      "volume": 171594.7329,
       "positionCount": 3,
       "top": {
         "symbol": "ETH",
         "side": "long",
         "lev": 25,
-        "notional": 96957.223325
+        "notional": 93954.954575
       }
     },
     {
       "account": "0x6d330800687ee1b85d4af30bff6bc41638f21524",
-      "oi": 124615.97173969999,
-      "uPnl": -1247.2178281540191,
+      "oi": 127087.08797989998,
+      "uPnl": -1356.101587954022,
       "volume": 0,
       "positionCount": 2,
       "top": {
         "symbol": "ETH",
         "side": "short",
         "lev": 25,
-        "notional": 64568.2
+        "notional": 65858.2
       }
     },
     {
       "account": "0xe50681d35ba91c5b13412ad2ea5f34b94141b122",
-      "oi": 120154.9,
-      "uPnl": 1645.1000000000058,
+      "oi": 122518.29999999999,
+      "uPnl": -718.2999999999884,
       "volume": 243200.00000000003,
       "positionCount": 1,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 120154.9
+        "notional": 122518.29999999999
       }
     },
     {
       "account": "0x00745751d32b837c85ce713ef6dcaf1b7813825d",
-      "oi": 96560.38500000001,
-      "uPnl": -340.1116057428548,
-      "volume": 192434.22847010012,
+      "oi": 99265.135,
+      "uPnl": 849.5439696349202,
+      "volume": 121923.42049789999,
       "positionCount": 3,
       "top": {
         "symbol": "ETH",
         "side": "short",
         "lev": 25,
-        "notional": 40355.125
+        "notional": 41161.375
+      }
+    },
+    {
+      "account": "0xbe065ebba26a54809c2a692b9056b6be1cf19081",
+      "oi": 96971.24082755,
+      "uPnl": -6795.687924753421,
+      "volume": 65815.032439,
+      "positionCount": 9,
+      "top": {
+        "symbol": "DOGE",
+        "side": "short",
+        "lev": 10,
+        "notional": 22197
+      }
+    },
+    {
+      "account": "0x572198bf8de11ec39b9c8c6f42606818624fc53c",
+      "oi": 90050.95049999999,
+      "uPnl": 268.6695792717941,
+      "volume": 97118.58462050003,
+      "positionCount": 1,
+      "top": {
+        "symbol": "BTC",
+        "side": "long",
+        "lev": 25,
+        "notional": 90050.95049999999
       }
     },
     {
       "account": "0x69be108a2aaa3e06df75f854df08d215acf0ca7a",
-      "oi": 85285.8195,
-      "uPnl": 4893.766940000012,
+      "oi": 86132.95949999998,
+      "uPnl": 5740.906939999999,
       "volume": 13784.26076,
       "positionCount": 1,
       "top": {
         "symbol": "ZEC",
         "side": "long",
         "lev": 10,
-        "notional": 85285.8195
+        "notional": 86132.95949999998
       }
     },
     {
-      "account": "0xbe065ebba26a54809c2a692b9056b6be1cf19081",
-      "oi": 85072.49436765,
-      "uPnl": -6585.2693846534185,
-      "volume": 54446.86891899999,
-      "positionCount": 9,
+      "account": "0xaf1395f9dcf31abb76a2e11073cf65151d965dc3",
+      "oi": 81248.408,
+      "uPnl": 1027.8583886999984,
+      "volume": 0,
+      "positionCount": 2,
       "top": {
-        "symbol": "DOGE",
-        "side": "short",
-        "lev": 10,
-        "notional": 21733.5
+        "symbol": "ETH",
+        "side": "long",
+        "lev": 5,
+        "notional": 49393.649999999994
       }
     },
     {
       "account": "0xf5ace5b4309689a06f8b743d297648fc275abd53",
-      "oi": 67237.8409557,
-      "uPnl": 3894.4350293000048,
+      "oi": 68560.38305189999,
+      "uPnl": 2571.892933100008,
       "volume": 999.9517564,
       "positionCount": 1,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 67237.8409557
+        "notional": 68560.38305189999
+      }
+    },
+    {
+      "account": "0xf98f0e7dd8e5189cb05664c0b220b7789c749ef0",
+      "oi": 63558.674999999996,
+      "uPnl": -136.761676600001,
+      "volume": 63020.8163966,
+      "positionCount": 2,
+      "top": {
+        "symbol": "ETH",
+        "side": "short",
+        "lev": 25,
+        "notional": 32929.1
+      }
+    },
+    {
+      "account": "0xe17934fd871bc3a7365dbf76df854c0cc777b3a2",
+      "oi": 62754.121499999994,
+      "uPnl": -2576.529857816946,
+      "volume": 28432.105959100016,
+      "positionCount": 4,
+      "top": {
+        "symbol": "BTC",
+        "side": "long",
+        "lev": 25,
+        "notional": 25116.251499999995
       }
     },
     {
       "account": "0x7bcc2462ebffb98f85167d4044cad78d68022e55",
-      "oi": 58751.53,
-      "uPnl": 181.82456319333124,
-      "volume": 12535.10297,
+      "oi": 59724.87999999999,
+      "uPnl": 1155.1745631933268,
+      "volume": 0,
       "positionCount": 3,
       "top": {
         "symbol": "BTC",
         "side": "long",
         "lev": 25,
-        "notional": 30038.725
+        "notional": 30629.574999999997
       }
     },
     {
-      "account": "0x9551e55ca9483ccf6918eb350a89fdd891939c17",
-      "oi": 51347.86104999999,
-      "uPnl": -769.7203699999955,
-      "volume": 0,
-      "positionCount": 1,
+      "account": "0xf4ec98833f328fe38d057402c27facdd150f5240",
+      "oi": 56189.74649999999,
+      "uPnl": -1213.74553580655,
+      "volume": 22925.207920899982,
+      "positionCount": 4,
       "top": {
-        "symbol": "ETH",
+        "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 51347.86104999999
+        "notional": 25116.251499999995
       }
     },
     {
       "account": "0x0b00d3869abfaa8e150bb70ef8d3576cd42f61e6",
-      "oi": 50424.85901235,
-      "uPnl": 535.5297899500032,
+      "oi": 51423.188637449995,
+      "uPnl": 376.0226648500046,
       "volume": 59988.259999999995,
       "positionCount": 2,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 29432.122987349998
+        "notional": 30011.041362449996
       }
     },
     {
-      "account": "0xae60311ccd3e324754db9c5d51bdda6a390e3adc",
-      "oi": 49943.5027,
-      "uPnl": -53.21916999999972,
-      "volume": 190148.77573999998,
+      "account": "0x3c446431dd0fa13af97f904c00dc34fb7a198dba",
+      "oi": 49007.32,
+      "uPnl": 48.43166429999401,
+      "volume": 48958.888335700016,
       "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 25,
-        "notional": 49943.5027
-      }
-    },
-    {
-      "account": "0x19a0f12d221d9adf2ed34e59812761c13bdfb657",
-      "oi": 49943.5027,
-      "uPnl": -50.864470000002285,
-      "volume": 190150.35120000003,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 25,
-        "notional": 49943.5027
-      }
-    },
-    {
-      "account": "0xfe4a27286f072eedbe96299889d27945c74df32e",
-      "oi": 48036.18,
-      "uPnl": -638.9062400000074,
-      "volume": 64061.31783999999,
-      "positionCount": 1,
-      "top": {
-        "symbol": "HYPE",
-        "side": "long",
-        "lev": 4,
-        "notional": 48036.18
-      }
-    },
-    {
-      "account": "0x6a3c1b0be8c53af0f351ee6efef18ae3892187e9",
-      "oi": 46043.65291,
-      "uPnl": -1120.8435899834385,
-      "volume": 100552.0333112,
-      "positionCount": 3,
       "top": {
         "symbol": "BTC",
-        "side": "short",
-        "lev": 25,
-        "notional": 30038.725
-      }
-    },
-    {
-      "account": "0xeb029aaafae347e1249a34ea8679da3c7a1e1bb0",
-      "oi": 44314.769864999995,
-      "uPnl": -204.23072500000595,
-      "volume": 241481.56287960007,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
         "side": "long",
-        "lev": 25,
-        "notional": 44314.769864999995
-      }
-    },
-    {
-      "account": "0x5c27131b7cfe91e09c80870ab01353b861637f87",
-      "oi": 41912.832825,
-      "uPnl": -193.1739349999998,
-      "volume": 80334.66070250001,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 25,
-        "notional": 41912.832825
-      }
-    },
-    {
-      "account": "0xe606741313153a60a5f4497f0fdd5b9aa5d143fd",
-      "oi": 41108.95873499999,
-      "uPnl": 1114.287844999997,
-      "volume": 0,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 5,
-        "notional": 41108.95873499999
-      }
-    },
-    {
-      "account": "0x51f60029edcb049aa1b0ab18c2366e049c8cd460",
-      "oi": 41108.95873499999,
-      "uPnl": -1122.5696925822126,
-      "volume": 1195.8566899999998,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "short",
-        "lev": 4,
-        "notional": 41108.95873499999
+        "lev": 16,
+        "notional": 49007.32
       }
     }
   ],
   "byUpnl": [
     {
       "account": "0x69be108a2aaa3e06df75f854df08d215acf0ca7a",
-      "oi": 85285.8195,
-      "uPnl": 4893.766940000012,
+      "oi": 86132.95949999998,
+      "uPnl": 5740.906939999999,
       "volume": 13784.26076,
       "positionCount": 1,
       "top": {
         "symbol": "ZEC",
         "side": "long",
         "lev": 10,
-        "notional": 85285.8195
+        "notional": 86132.95949999998
+      }
+    },
+    {
+      "account": "0x11d67fa925877813b744abc0917900c2b1d6eb81",
+      "oi": 9162.522075,
+      "uPnl": 3705.2638349999997,
+      "volume": 0,
+      "positionCount": 1,
+      "top": {
+        "symbol": "ETH",
+        "side": "short",
+        "lev": 25,
+        "notional": 9162.522075
       }
     },
     {
       "account": "0xf5ace5b4309689a06f8b743d297648fc275abd53",
-      "oi": 67237.8409557,
-      "uPnl": 3894.4350293000048,
+      "oi": 68560.38305189999,
+      "uPnl": 2571.892933100008,
       "volume": 999.9517564,
       "positionCount": 1,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 67237.8409557
+        "notional": 68560.38305189999
       }
     },
     {
       "account": "0x584743497098d00733d5d29fe80e020280427027",
-      "oi": 26041.54,
-      "uPnl": 2148.0800000000004,
+      "oi": 26845.059999999998,
+      "uPnl": 2478.9200000000005,
       "volume": 0,
       "positionCount": 2,
       "top": {
         "symbol": "SOL",
         "side": "long",
         "lev": 20,
-        "notional": 14026.05
+        "notional": 14593.23
+      }
+    },
+    {
+      "account": "0x7be5004f435c29a30fe211c0cfdbaa59a3b70b06",
+      "oi": 17354.03396,
+      "uPnl": 2264.8558399999993,
+      "volume": 0,
+      "positionCount": 1,
+      "top": {
+        "symbol": "HYPE",
+        "side": "long",
+        "lev": 5,
+        "notional": 17354.03396
       }
     },
     {
       "account": "0x08aa7fcb8705acb75a333320e3780f16bef8f5b1",
-      "oi": 19538.43,
-      "uPnl": 1862.0581100000022,
+      "oi": 19730.32,
+      "uPnl": 2053.948110000002,
       "volume": 14817.396449999997,
       "positionCount": 2,
       "top": {
-        "symbol": "LIT",
+        "symbol": "ETH",
+        "side": "long",
+        "lev": 25,
+        "notional": 9878.73
+      }
+    },
+    {
+      "account": "0xe606741313153a60a5f4497f0fdd5b9aa5d143fd",
+      "oi": 41930.269485,
+      "uPnl": 1931.182248731341,
+      "volume": 197.21382000000003,
+      "positionCount": 1,
+      "top": {
+        "symbol": "ETH",
         "side": "long",
         "lev": 5,
-        "notional": 9853.2
+        "notional": 41930.269485
+      }
+    },
+    {
+      "account": "0x73bdf6e4381a92cb48f48e2143e28047ba72a998",
+      "oi": 14608.114079999998,
+      "uPnl": 1871.6560799999986,
+      "volume": 0,
+      "positionCount": 1,
+      "top": {
+        "symbol": "HYPE",
+        "side": "long",
+        "lev": 5,
+        "notional": 14608.114079999998
       }
     },
     {
       "account": "0x59ac7f7e630c10e2bc80d731f4423abdde9234dc",
-      "oi": 6428.287149999999,
-      "uPnl": 1794.126145401747,
+      "oi": 6554.729049999999,
+      "uPnl": 1667.6842454017474,
       "volume": 0,
       "positionCount": 1,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 8,
-        "notional": 6428.287149999999
+        "notional": 6554.729049999999
       }
     },
     {
-      "account": "0x73bdf6e4381a92cb48f48e2143e28047ba72a998",
-      "oi": 14388.10002,
-      "uPnl": 1651.6420199999993,
-      "volume": 0,
-      "positionCount": 1,
-      "top": {
-        "symbol": "HYPE",
-        "side": "long",
-        "lev": 5,
-        "notional": 14388.10002
-      }
-    },
-    {
-      "account": "0xe50681d35ba91c5b13412ad2ea5f34b94141b122",
-      "oi": 120154.9,
-      "uPnl": 1645.1000000000058,
-      "volume": 243200.00000000003,
-      "positionCount": 1,
-      "top": {
-        "symbol": "BTC",
-        "side": "short",
-        "lev": 25,
-        "notional": 120154.9
-      }
-    },
-    {
-      "account": "0xe606741313153a60a5f4497f0fdd5b9aa5d143fd",
-      "oi": 41108.95873499999,
-      "uPnl": 1114.287844999997,
-      "volume": 0,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 5,
-        "notional": 41108.95873499999
-      }
-    },
-    {
-      "account": "0x90f15e09b8fb5bc080b968170c638920db3a3446",
-      "oi": 22993.015835000002,
-      "uPnl": 1053.7302700000007,
-      "volume": 0,
-      "positionCount": 2,
+      "account": "0x938a104179a2d23dec249a968ecd5b4f8b857cac",
+      "oi": 760913.528065,
+      "uPnl": 1576.8767837461562,
+      "volume": 59913.30689549999,
+      "positionCount": 13,
       "top": {
         "symbol": "LIT",
         "side": "long",
-        "lev": 5,
-        "notional": 12067.813800000004
+        "lev": 3,
+        "notional": 169039.79200500002
+      }
+    },
+    {
+      "account": "0xaebcf9c21bb4c26075edbd6bc205ec0a05ff1d3d",
+      "oi": 163321.454575,
+      "uPnl": 1569.639239305331,
+      "volume": 171594.7329,
+      "positionCount": 3,
+      "top": {
+        "symbol": "ETH",
+        "side": "long",
+        "lev": 25,
+        "notional": 93954.954575
+      }
+    },
+    {
+      "account": "0x18774e536505f7f78f0597ab371a385511fffafc",
+      "oi": 29484.125,
+      "uPnl": 1246.1537720000015,
+      "volume": 48581.24884100004,
+      "positionCount": 3,
+      "top": {
+        "symbol": "ETH",
+        "side": "long",
+        "lev": 25,
+        "notional": 11525.185
+      }
+    },
+    {
+      "account": "0x7bcc2462ebffb98f85167d4044cad78d68022e55",
+      "oi": 59724.87999999999,
+      "uPnl": 1155.1745631933268,
+      "volume": 0,
+      "positionCount": 3,
+      "top": {
+        "symbol": "BTC",
+        "side": "long",
+        "lev": 25,
+        "notional": 30629.574999999997
       }
     },
     {
       "account": "0xd749d4134b654258f79bb9c6d1a3d4c623cecf4a",
-      "oi": 10725.341295,
-      "uPnl": 968.1662950000001,
+      "oi": 10889.346679999999,
+      "uPnl": 1132.1716799999995,
       "volume": 0,
       "positionCount": 1,
       "top": {
         "symbol": "HYPE",
         "side": "long",
         "lev": 10,
-        "notional": 10725.341295
+        "notional": 10889.346679999999
       }
     },
     {
-      "account": "0x0b00d3869abfaa8e150bb70ef8d3576cd42f61e6",
-      "oi": 50424.85901235,
-      "uPnl": 535.5297899500032,
-      "volume": 59988.259999999995,
+      "account": "0xaf1395f9dcf31abb76a2e11073cf65151d965dc3",
+      "oi": 81248.408,
+      "uPnl": 1027.8583886999984,
+      "volume": 0,
       "positionCount": 2,
       "top": {
-        "symbol": "BTC",
-        "side": "short",
-        "lev": 25,
-        "notional": 29432.122987349998
+        "symbol": "ETH",
+        "side": "long",
+        "lev": 5,
+        "notional": 49393.649999999994
       }
     },
     {
-      "account": "0x04372e23d4232919c614dd1dbc41e5b34cdc0c4b",
-      "oi": 9679.919053799998,
-      "uPnl": 447.4234714000002,
-      "volume": 0,
-      "positionCount": 1,
+      "account": "0x00745751d32b837c85ce713ef6dcaf1b7813825d",
+      "oi": 99265.135,
+      "uPnl": 849.5439696349202,
+      "volume": 121923.42049789999,
+      "positionCount": 3,
       "top": {
-        "symbol": "BTC",
+        "symbol": "ETH",
         "side": "short",
-        "lev": 21,
-        "notional": 9679.919053799998
+        "lev": 25,
+        "notional": 41161.375
+      }
+    },
+    {
+      "account": "0x00be0def9a7e059f9c86def376ecd67d556a61e3",
+      "oi": 10308.640650000001,
+      "uPnl": 837.2281500000009,
+      "volume": 0,
+      "positionCount": 2,
+      "top": {
+        "symbol": "LIT",
+        "side": "long",
+        "lev": 2,
+        "notional": 7067.445000000001
       }
     },
     {
       "account": "0x46232cbdb0512ca7b00b8271e285bf8447f1330b",
-      "oi": 11095.04127,
-      "uPnl": 431.6851350000004,
-      "volume": 2699.54586,
+      "oi": 11427.12665,
+      "uPnl": 724.8418750000004,
+      "volume": 8139.0867,
       "positionCount": 2,
       "top": {
         "symbol": "SOL",
         "side": "long",
         "lev": 20,
-        "notional": 8406.2793
+        "notional": 8746.20918
       }
     },
     {
-      "account": "0xac1416aac56104f6c1ddfd87f060177f5273c060",
-      "oi": 19370.46,
-      "uPnl": 422.3799999999992,
-      "volume": 37899.14919999999,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 14,
-        "notional": 19370.46
-      }
-    },
-    {
-      "account": "0x2a724be1b63caec1c3ef95834fdd443c3347ee1d",
-      "oi": 2570.4000000000005,
-      "uPnl": 385.2000000000005,
+      "account": "0xe2f09e10f9912487ba56a34f0f5592c5a4ab53d7",
+      "oi": 24652.335957049996,
+      "uPnl": 652.3945310499976,
       "volume": 0,
       "positionCount": 1,
+      "top": {
+        "symbol": "BTC",
+        "side": "long",
+        "lev": 10,
+        "notional": 24652.335957049996
+      }
+    },
+    {
+      "account": "0x90f15e09b8fb5bc080b968170c638920db3a3446",
+      "oi": 23432.833076000003,
+      "uPnl": 609.9692990000008,
+      "volume": 0,
+      "positionCount": 2,
       "top": {
         "symbol": "LIT",
         "side": "long",
         "lev": 5,
-        "notional": 2570.4000000000005
-      }
-    },
-    {
-      "account": "0x4c0ee384ef580e5532bd48702efe15c7d2ab8c55",
-      "oi": 18101.69487,
-      "uPnl": 373.2628000000006,
-      "volume": 31941.497499999998,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 15,
-        "notional": 18101.69487
-      }
-    },
-    {
-      "account": "0xcac2edcd082628ba3ba31b3b74537792550319e6",
-      "oi": 2162.344174,
-      "uPnl": 368.4761649499941,
-      "volume": 14516.970037999994,
-      "positionCount": 6,
-      "top": {
-        "symbol": "BNB",
-        "side": "short",
-        "lev": 15,
-        "notional": 602.4724
-      }
-    },
-    {
-      "account": "0xcbbee5e2c2120eb268e5528db5ed3cdabc6a0741",
-      "oi": 9815.2129395,
-      "uPnl": 365.67371949999995,
-      "volume": 39990.89775899997,
-      "positionCount": 3,
-      "top": {
-        "symbol": "XRP",
-        "side": "long",
-        "lev": 7,
-        "notional": 4215.4801245
-      }
-    },
-    {
-      "account": "0xe00a157b9bba734ed8b58009393b5cce1f6981e2",
-      "oi": 2784.6000000000004,
-      "uPnl": 357.70643000000035,
-      "volume": 2426.89357,
-      "positionCount": 1,
-      "top": {
-        "symbol": "LIT",
-        "side": "long",
-        "lev": 5,
-        "notional": 2784.6000000000004
-      }
-    },
-    {
-      "account": "0x4a9d36acdc3701c207ca9f3d7bc7e9694817092c",
-      "oi": 906.981075,
-      "uPnl": 357.2390249999999,
-      "volume": 0,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ZEC",
-        "side": "short",
-        "lev": 3,
-        "notional": 906.981075
+        "notional": 12065.841935000002
       }
     }
   ],
   "byVolume": [
     {
-      "account": "0x6a3afcf92bc7ea40e7d893e6acb0c73a54058658",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 643001.4694099998,
-      "positionCount": 0,
-      "top": null
+      "account": "0xabbc45d1726e3231e6fbad61eb72aef71b035787",
+      "oi": 508927.09070284996,
+      "uPnl": -8216.605683546071,
+      "volume": 537700.2068545998,
+      "positionCount": 6,
+      "top": {
+        "symbol": "BTC",
+        "side": "short",
+        "lev": 25,
+        "notional": 258316.29727784995
+      }
     },
     {
       "account": "0xea1e5d8f06f505e6dd9adfa5d2004b48a6c4e6e8",
-      "oi": 27824.325210000003,
-      "uPnl": 0.5597700000010882,
-      "volume": 421187.4093222999,
+      "oi": 31514.8692,
+      "uPnl": -138.57126999999903,
+      "volume": 456728.9090223001,
       "positionCount": 1,
       "top": {
         "symbol": "HYPE",
         "side": "short",
         "lev": 20,
-        "notional": 27824.325210000003
+        "notional": 31514.8692
       }
     },
     {
       "account": "0xaf96951d3d1c5dd6d676307cec7cecf242aafdbf",
-      "oi": 12546.336600000002,
-      "uPnl": 55.59730000000073,
+      "oi": 12544.286545000003,
+      "uPnl": 53.54724500000031,
       "volume": 412849.12028000003,
       "positionCount": 1,
       "top": {
         "symbol": "LIT",
         "side": "long",
         "lev": 5,
-        "notional": 12546.336600000002
+        "notional": 12544.286545000003
       }
     },
     {
-      "account": "0x5fc9694171d2fc49642c8e2b9456ee9848aca128",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 343917.1028300003,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0x535faa541252d9650f1f8a8bbd88709fb8b55a1b",
-      "oi": 3278.8,
-      "uPnl": -34.80000000000017,
-      "volume": 339249.84460799984,
+      "account": "0xb061d61fb4a4031f7f528378aec7302d5fc6a498",
+      "oi": 6420.4086,
+      "uPnl": 17.02491999999979,
+      "volume": 366415.54772049986,
       "positionCount": 1,
       "top": {
-        "symbol": "VVV",
-        "side": "short",
-        "lev": 3,
-        "notional": 3278.8
+        "symbol": "HYPE",
+        "side": "long",
+        "lev": 4,
+        "notional": 6420.4086
       }
     },
     {
       "account": "0xc3cdb57c1169fd641ef5d08d9a5828e5a8bcefcf",
-      "oi": 29197.51761955,
-      "uPnl": -128.4905104499997,
-      "volume": 330584.62437910005,
-      "positionCount": 2,
-      "top": {
-        "symbol": "BTC",
-        "side": "long",
-        "lev": 20,
-        "notional": 23541.88947955
-      }
-    },
-    {
-      "account": "0x1acb5a08eb9e61661da33aafa499b02eccddcdd3",
-      "oi": 18023.234999999997,
-      "uPnl": 223.48853959999906,
-      "volume": 296942.0694794001,
+      "oi": 5742.11056,
+      "uPnl": 112.2079199999998,
+      "volume": 354507.92103050003,
       "positionCount": 1,
       "top": {
-        "symbol": "BTC",
-        "side": "short",
-        "lev": 25,
-        "notional": 18023.234999999997
+        "symbol": "HYPE",
+        "side": "long",
+        "lev": 5,
+        "notional": 5742.11056
       }
     },
     {
-      "account": "0x812b9bb152a7ae8e5c7d965c912acad14eccb53b",
-      "oi": 39993.407032999996,
-      "uPnl": 13.927117999997941,
-      "volume": 289783.29585310025,
+      "account": "0x7c6bf9003ae3ba366883f63a28c4f3fd6a5958a0",
+      "oi": 486099.083444,
+      "uPnl": -30891.415323000023,
+      "volume": 353641.3893709999,
       "positionCount": 2,
       "top": {
-        "symbol": "XRP",
+        "symbol": "LIT",
         "side": "short",
-        "lev": 10,
-        "notional": 20011.8182805
+        "lev": 5,
+        "notional": 253297.01463500003
       }
     },
     {
-      "account": "0xd1f86f3c3e14aa992cafb6941e3b6410fde77aa2",
-      "oi": 30999.06303825,
-      "uPnl": -301.20529825763066,
-      "volume": 283622.96350059996,
-      "positionCount": 1,
-      "top": {
-        "symbol": "BTC",
-        "side": "long",
-        "lev": 10,
-        "notional": 30999.06303825
-      }
+      "account": "0x8844126ca5defee105ae50e5089933768ccf9999",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 342480.05507690035,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0xeb029aaafae347e1249a34ea8679da3c7a1e1bb0",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 286272.8069396,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x1b06d8b2a64118028e9d3f2e99e4c2b7c4a45f54",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 285652.9408799999,
+      "positionCount": 0,
+      "top": null
     },
     {
       "account": "0xfcdfda023f727dafa35e8ee2715bcd7411c86b21",
@@ -643,124 +638,104 @@
       "top": null
     },
     {
+      "account": "0xd8081704f94d96c9c38ff5e4d01c55350f80af36",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 257755.73660080004,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x19ee7277e08f93dc363a972c48190962bfebd96d",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 253078.67371279997,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x21f1bfce3ea1ca31e6ca378b1ffc45f6f9198e0d",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 247779.17963099998,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x061126af439c46c8c9f219d12fec4047248d36ee",
+      "oi": 965.0990999999998,
+      "uPnl": 22.275459999999946,
+      "volume": 245133.18539999996,
+      "positionCount": 1,
+      "top": {
+        "symbol": "ZEC",
+        "side": "long",
+        "lev": 3,
+        "notional": 965.0990999999998
+      }
+    },
+    {
+      "account": "0x5027457c50a3b45772bafe70e2e6f05d98514ad4",
+      "oi": 985.74410685,
+      "uPnl": -15.846891150000095,
+      "volume": 243777.49923999995,
+      "positionCount": 2,
+      "top": {
+        "symbol": "BTC",
+        "side": "long",
+        "lev": 25,
+        "notional": 982.5355068499999
+      }
+    },
+    {
       "account": "0xe50681d35ba91c5b13412ad2ea5f34b94141b122",
-      "oi": 120154.9,
-      "uPnl": 1645.1000000000058,
+      "oi": 122518.29999999999,
+      "uPnl": -718.2999999999884,
       "volume": 243200.00000000003,
       "positionCount": 1,
       "top": {
         "symbol": "BTC",
         "side": "short",
         "lev": 25,
-        "notional": 120154.9
+        "notional": 122518.29999999999
       }
     },
     {
-      "account": "0xeb029aaafae347e1249a34ea8679da3c7a1e1bb0",
-      "oi": 44314.769864999995,
-      "uPnl": -204.23072500000595,
-      "volume": 241481.56287960007,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 25,
-        "notional": 44314.769864999995
-      }
-    },
-    {
-      "account": "0x5e9484cf283623aa7b2eafce365b72d8e33216a3",
+      "account": "0x5fc9694171d2fc49642c8e2b9456ee9848aca128",
       "oi": 0,
       "uPnl": 0,
-      "volume": 235722.0622100001,
+      "volume": 242892.2722599999,
       "positionCount": 0,
       "top": null
     },
     {
-      "account": "0xd8081704f94d96c9c38ff5e4d01c55350f80af36",
-      "oi": 33636.80379,
-      "uPnl": 156.18080999999773,
-      "volume": 223728.48717080004,
+      "account": "0x4a07a7c6fe412d14134dce2bb738b32757b968fe",
+      "oi": 12100.27232,
+      "uPnl": -377.29066999999884,
+      "volume": 242361.88327479997,
       "positionCount": 1,
       "top": {
-        "symbol": "ETH",
-        "side": "short",
-        "lev": 25,
-        "notional": 33636.80379
+        "symbol": "HYPE",
+        "side": "long",
+        "lev": 20,
+        "notional": 12100.27232
       }
     },
     {
-      "account": "0x21f1bfce3ea1ca31e6ca378b1ffc45f6f9198e0d",
-      "oi": 32913.63995,
-      "uPnl": 152.82304999999778,
-      "volume": 214483.15214100006,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "short",
-        "lev": 25,
-        "notional": 32913.63995
-      }
-    },
-    {
-      "account": "0x19ee7277e08f93dc363a972c48190962bfebd96d",
-      "oi": 39004.035415,
-      "uPnl": 259.3898050000031,
-      "volume": 213624.45966279996,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "short",
-        "lev": 25,
-        "notional": 39004.035415
-      }
-    },
-    {
-      "account": "0x37d000df7de09b3ea85c03029db68d1b50ff2847",
+      "account": "0x3f25e25718cc55c01dd1f63a0d25f5980daa25c9",
       "oi": 0,
       "uPnl": 0,
-      "volume": 212478.37926410002,
+      "volume": 240766.22042,
       "positionCount": 0,
       "top": null
     },
     {
-      "account": "0x3fc56aaab3de3c92cb5c3a36f2dce528231c1010",
-      "oi": 14345.834208049999,
-      "uPnl": -72.09025885000082,
-      "volume": 202092.30406450003,
-      "positionCount": 1,
-      "top": {
-        "symbol": "BTC",
-        "side": "long",
-        "lev": 25,
-        "notional": 14345.834208049999
-      }
-    },
-    {
-      "account": "0x9352194a7f3c2c197cd0a29c81f0bb03f6de2c06",
-      "oi": 10173.0195055,
-      "uPnl": 3.1076701309285846,
-      "volume": 199234.8017784,
-      "positionCount": 4,
-      "top": {
-        "symbol": "BTC",
-        "side": "short",
-        "lev": 25,
-        "notional": 4871.6804205
-      }
-    },
-    {
-      "account": "0x075cf38c6371d3e6fe51269d2485bd75bed06777",
-      "oi": 5778.8539,
-      "uPnl": -40.63515000000058,
-      "volume": 197429.75822000002,
-      "positionCount": 1,
-      "top": {
-        "symbol": "ETH",
-        "side": "long",
-        "lev": 25,
-        "notional": 5778.8539
-      }
+      "account": "0xae60311ccd3e324754db9c5d51bdda6a390e3adc",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 240581.32399999994,
+      "positionCount": 0,
+      "top": null
     }
   ]
 }

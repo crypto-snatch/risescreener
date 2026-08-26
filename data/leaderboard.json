@@ -1,8 +1,74 @@
 {
-  "generatedAt": "2026-08-26T05:37:10.632Z",
-  "totalAccounts": 5528,
-  "accountsWithPositions": 1246,
+  "generatedAt": "2026-08-26T06:11:19.676Z",
+  "totalAccounts": 5533,
+  "accountsWithPositions": 1038,
   "byOI": [
+    {
+      "account": "0x228e195eb98faa456b17c2d285495a3bee22765e",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 0,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0xe6b0848076a4f045645ceb6da174a5132478834b",
+      "oi": 0,
+      "uPnl": -495.0843112,
+      "volume": 495.0843112,
+      "positionCount": 1,
+      "top": {
+        "symbol": "#1",
+        "side": "long",
+        "lev": 25,
+        "notional": 0
+      }
+    },
+    {
+      "account": "0xa7a4e8c6f7f77b5a937d16c53c5f49fc399d49fb",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 0,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0xcba65b585c2cd42c9d0e0de4c36013333411edd7",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 0,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x2e30f7d0a77b069ecb1ef826794ce6a73b815bf6",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 0,
+      "positionCount": 0,
+      "top": null
+    },
+    {
+      "account": "0x0b9cab28f84259f434df10f0357add31344e7d18",
+      "oi": 0,
+      "uPnl": -8220.168527900145,
+      "volume": 4876.093249000001,
+      "positionCount": 5,
+      "top": {
+        "symbol": "#7",
+        "side": "long",
+        "lev": 3,
+        "notional": 0
+      }
+    },
+    {
+      "account": "0x6647eb4fd0903519e5e510aa7076825473914ff4",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 0,
+      "positionCount": 0,
+      "top": null
+    },
     {
       "account": "0x4247fcaa81e97c04850e03d674b742c49a2b463a",
       "oi": 0,
@@ -73,14 +139,6 @@
       "top": null
     },
     {
-      "account": "0x228e195eb98faa456b17c2d285495a3bee22765e",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 0,
-      "positionCount": 0,
-      "top": null
-    },
-    {
       "account": "0xacda8a733a1c498583916cbe39f01fd99ba5b680",
       "oi": 0,
       "uPnl": 836.5509837999998,
@@ -96,12 +154,12 @@
     {
       "account": "0x37627538b1c6afd550798763062a3e791a59e901",
       "oi": 0,
-      "uPnl": 1.1261864999999034,
-      "volume": 23092.425934299994,
+      "uPnl": -1.5533966999999507,
+      "volume": 23165.872855299996,
       "positionCount": 2,
       "top": {
         "symbol": "#1",
-        "side": "short",
+        "side": "long",
         "lev": 25,
         "notional": 0
       }
@@ -129,59 +187,6 @@
       "volume": 574.6410468,
       "positionCount": 0,
       "top": null
-    },
-    {
-      "account": "0x2d5db431d30d6963f23972e871e0267ff9c7d0ea",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 0,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0x610bcd3aec15bc6ea6abf1d0bd682fa8c5890f0b",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 1079.9965132,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0xc46d7fcb22d25dd4dbc770f79ae4ee2b2d39b6a3",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 0,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0x17424ccccae665fa85c3d424540e9fa87a5af3a5",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 90486.625369,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0xe00fc8d0dacee3f55a76e82bd4fdc79681b708c9",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 0,
-      "positionCount": 0,
-      "top": null
-    },
-    {
-      "account": "0xb116f5b811a70b8d10efe5d0ef41ebf2281c1c3c",
-      "oi": 0,
-      "uPnl": 3942.6675379999997,
-      "volume": 175279.32114349995,
-      "positionCount": 1,
-      "top": {
-        "symbol": "#1",
-        "side": "short",
-        "lev": 25,
-        "notional": 0
-      }
     }
   ],
   "byUpnl": [
@@ -251,9 +256,22 @@
       }
     },
     {
+      "account": "0x5b236d19f680ff47e7bf2a9eb88fc5cc03d443a8",
+      "oi": 0,
+      "uPnl": 297992.2675472641,
+      "volume": 0,
+      "positionCount": 2,
+      "top": {
+        "symbol": "#1",
+        "side": "short",
+        "lev": 25,
+        "notional": 0
+      }
+    },
+    {
       "account": "0xabbc45d1726e3231e6fbad61eb72aef71b035787",
       "oi": 0,
-      "uPnl": 297141.6010910243,
+      "uPnl": 265619.32274778,
       "volume": 0,
       "positionCount": 6,
       "top": {
@@ -277,13 +295,13 @@
       }
     },
     {
-      "account": "0x14bb5440db38aa9f4eb3f11f9c12965ea6c342aa",
+      "account": "0xd29d002b1126077670d716772fc49f3fd44ceecb",
       "oi": 0,
-      "uPnl": 204382.741622561,
+      "uPnl": 187658.5513247769,
       "volume": 0,
-      "positionCount": 7,
+      "positionCount": 11,
       "top": {
-        "symbol": "#3",
+        "symbol": "#17",
         "side": "short",
         "lev": 20,
         "notional": 0
@@ -316,6 +334,19 @@
       }
     },
     {
+      "account": "0xe6634ca72869a70015760f1ff7f8036c24a3631f",
+      "oi": 0,
+      "uPnl": 105367.76697252276,
+      "volume": 0,
+      "positionCount": 5,
+      "top": {
+        "symbol": "#15",
+        "side": "short",
+        "lev": 3,
+        "notional": 0
+      }
+    },
+    {
       "account": "0x114ed583edb30e48b9b962a5625610c46c462442",
       "oi": 0,
       "uPnl": 100092.898567,
@@ -329,6 +360,19 @@
       }
     },
     {
+      "account": "0xb0026ca48937bd18c5941c05decab68b0fcced8a",
+      "oi": 0,
+      "uPnl": 99999.93317599999,
+      "volume": 0,
+      "positionCount": 1,
+      "top": {
+        "symbol": "#26",
+        "side": "short",
+        "lev": 20,
+        "notional": 0
+      }
+    },
+    {
       "account": "0x080fc395599cd2322b66f6495c1f06d3f94f347f",
       "oi": 0,
       "uPnl": 92961.79678263518,
@@ -338,19 +382,6 @@
         "symbol": "#3",
         "side": "short",
         "lev": 20,
-        "notional": 0
-      }
-    },
-    {
-      "account": "0xe6634ca72869a70015760f1ff7f8036c24a3631f",
-      "oi": 0,
-      "uPnl": 91670.24437393733,
-      "volume": 0,
-      "positionCount": 7,
-      "top": {
-        "symbol": "#15",
-        "side": "short",
-        "lev": 3,
         "notional": 0
       }
     },
@@ -381,19 +412,6 @@
       }
     },
     {
-      "account": "0xf285c3701a834f94c5a6593b3923f71b508590f2",
-      "oi": 0,
-      "uPnl": 79983.529794,
-      "volume": 0,
-      "positionCount": 4,
-      "top": {
-        "symbol": "#17",
-        "side": "short",
-        "lev": 20,
-        "notional": 0
-      }
-    },
-    {
       "account": "0x583cd33c4e93f34b5e7e8ad2dd90330fb59108ca",
       "oi": 0,
       "uPnl": 79014.75702944353,
@@ -403,19 +421,6 @@
         "symbol": "#1",
         "side": "short",
         "lev": 25,
-        "notional": 0
-      }
-    },
-    {
-      "account": "0x254830cb8a45413237712499e838ecd657963114",
-      "oi": 0,
-      "uPnl": 64595.52999,
-      "volume": 0,
-      "positionCount": 1,
-      "top": {
-        "symbol": "#5",
-        "side": "short",
-        "lev": 20,
         "notional": 0
       }
     },
@@ -526,19 +531,6 @@
       }
     },
     {
-      "account": "0xc74bc773cfd6e1415187d0235868c7c7994bc4df",
-      "oi": 0,
-      "uPnl": -39399.080853399995,
-      "volume": 357309.24002679996,
-      "positionCount": 1,
-      "top": {
-        "symbol": "#1",
-        "side": "long",
-        "lev": 25,
-        "notional": 0
-      }
-    },
-    {
       "account": "0x5b34ff6b7a1dce7fb3e53355930dce2c70d1d5c6",
       "oi": 0,
       "uPnl": 1450.7305205151206,
@@ -558,6 +550,19 @@
       "volume": 311750.3056675001,
       "positionCount": 0,
       "top": null
+    },
+    {
+      "account": "0x608c52856ceb4bad767a24fe96c93d2e49842aca",
+      "oi": 0,
+      "uPnl": -118796.04102730125,
+      "volume": 293553.43503820006,
+      "positionCount": 5,
+      "top": {
+        "symbol": "#1",
+        "side": "long",
+        "lev": 10,
+        "notional": 0
+      }
     },
     {
       "account": "0xedbc6a2825a413da20cfdbb671c5beab32a3a97f",
@@ -612,18 +617,10 @@
       }
     },
     {
-      "account": "0x4b218e595ba61f389253163a733cca45cf9942c8",
-      "oi": 0,
-      "uPnl": 0,
-      "volume": 176400.390732,
-      "positionCount": 0,
-      "top": null
-    },
-    {
       "account": "0xb116f5b811a70b8d10efe5d0ef41ebf2281c1c3c",
       "oi": 0,
-      "uPnl": 3942.6675379999997,
-      "volume": 175279.32114349995,
+      "uPnl": 9866.0683149,
+      "volume": 181202.72192039993,
       "positionCount": 1,
       "top": {
         "symbol": "#1",
@@ -631,6 +628,14 @@
         "lev": 25,
         "notional": 0
       }
+    },
+    {
+      "account": "0x4b218e595ba61f389253163a733cca45cf9942c8",
+      "oi": 0,
+      "uPnl": 0,
+      "volume": 176400.390732,
+      "positionCount": 0,
+      "top": null
     },
     {
       "account": "0xdc3116cfa2e2f2b66e67c25bf78b7e8abb10e6db",
@@ -646,6 +651,19 @@
       }
     },
     {
+      "account": "0x938a104179a2d23dec249a968ecd5b4f8b857cac",
+      "oi": 0,
+      "uPnl": 20960.61986538339,
+      "volume": 149798.4171248001,
+      "positionCount": 15,
+      "top": {
+        "symbol": "#1",
+        "side": "long",
+        "lev": 25,
+        "notional": 0
+      }
+    },
+    {
       "account": "0x468fb194f44259ec10c016eb8eeaccef1d35ffbe",
       "oi": 0,
       "uPnl": -8113.8911979999975,
@@ -655,19 +673,6 @@
         "symbol": "#22",
         "side": "short",
         "lev": 20,
-        "notional": 0
-      }
-    },
-    {
-      "account": "0x938a104179a2d23dec249a968ecd5b4f8b857cac",
-      "oi": 0,
-      "uPnl": -15711.652300278438,
-      "volume": 130049.36813660001,
-      "positionCount": 15,
-      "top": {
-        "symbol": "#1",
-        "side": "long",
-        "lev": 25,
         "notional": 0
       }
     },
